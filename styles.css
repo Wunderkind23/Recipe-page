@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: serif;
+    font-style: normal;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+} 
+nav ul{
+    display: flex;
+}
+nav li{
+    margin-right:1.5em ;
+    list-style: none;
+    padding: 0;
+}
+nav li:hover{
+    border-bottom:1px solid red;
+}
+.front-page{
+    height: 50vh;
+    background-image: url(imgs/recipe.jpg);
+    padding-top:10vh;
+    padding-left:20vw;
+}
+.signup{
+    padding: .3em .2em ;
+    background-color: lightgreen;
+    color:white;
+    border-radius: .3em;
+    border: none;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+}
+span{
+    font-size: 1rem;
+    color:white;
+}
+#view-recipe{
+    margin-top: .5em;
+    background-color: red;
+    padding: .5em 1em;
+    color: white;
+    border:none;
+    border-radius: .3em;
+}
+.recipe-cont{
+    display: flex;
+    justify-content: center;
+    padding: 0 3em;
+}
+.recipe-link{
+    width:12%;
+    background-color: rgb(204, 198, 198);
+    padding: 1em 1em;
+    text-align: center;
+    
+}
+.recipe-link:hover{
+    background-color: lightgreen;
+}
+.container{
+    margin-top: 2em;
+    width: 100%;
+}
+.sub-cont{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.recipe-info{
+    display: flex;
+    justify-content: space-between;
+    max-width: 640px;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    width: 60%;
+    gap:1em;
+}
+.webpage-info{
+    display: flex;
+    flex-direction: column;
+    max-width:200px ;
+    padding: .5em;
+}
+.corn-info{
+    max-width: 200px;
+    background-color: rgb(243, 237, 237);
+}
+.corn{
+    width: 100%;
+}
+.recipe-title{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    
+}
+.recipe-btn{
+    padding: .5em 1em;
+    background-color: lightgreen;
+    border-radius: .3em;
+    border: none;
+    color: white;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+.search-main{
+    display: flex;
+    margin-bottom: 2em;
+
+}
+.search{
+    padding: .2em .5em;
+    margin-left: -1em;
+    background-color: lightgreen;
+    border: none;
+}
+.search-bar{
+    width: 150px;
+    padding-left: .5em;
+    font-size: .80rem;
+    
+}
+.page-profile{
+    display: flex;
+    margin-bottom: 1em;
+}
+.handsome{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+@media (max-width:600px) {
+    header{
+        flex-direction: column;
+    }
+    .chow, h2{
+        text-align: center;
+    }
+    .sub-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe-info{
+        justify-content: center;
+    }
+
+}
